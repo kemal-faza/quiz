@@ -17,7 +17,10 @@ export default function StartPage({
 
 	return (
 		<div>
-			<h1 className={clsx("uppercase text-3xl text-center mb-20")}>
+			<h1
+				className={clsx(
+					"uppercase text-2xl sm:text-3xl text-center mb-20",
+				)}>
 				dari pertanyaan receh hingga paling mind-blowing
 			</h1>
 			<form
