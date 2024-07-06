@@ -12,6 +12,7 @@ import {
 	pressStart2P,
 } from "@/lib/data";
 import clsx from "clsx";
+import { shuffle } from "lodash";
 import { ChevronDown, Medal, Plus } from "lucide-react";
 import Link from "next/link";
 import { use, useEffect, useState } from "react";
@@ -30,7 +31,7 @@ export default function Home() {
 	useEffect(() => {
 		async function getData() {
 			const dataQuestions: Question[] = await getQuestions();
-			setQuestions(dataQuestions);
+			setQuestions(shuffle(dataQuestions));
 		}
 
 		getData();
