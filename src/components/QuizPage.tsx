@@ -96,13 +96,7 @@ export default function QuizPage({
 	return (
 		<div>
 			<p className="text-sm mb-5">No. {currentQuestion}</p>
-			<p className="text-justify text-base">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-				animi in aliquid, nobis sunt quas error vitae itaque! Optio
-				quaerat natus nobis, tempore asperiores praesentium neque ipsam
-				porro dolorum perferendis?
-			</p>
-			{/* <p className="text-justify text-base">{question?.question}</p> */}
+			<p className="text-justify text-base">{question?.question}</p>
 			<form className="block mt-5 text-base">
 				{options.map((option) => {
 					const answer = find(answers, {
